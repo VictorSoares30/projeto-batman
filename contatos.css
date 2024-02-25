@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&family=Young+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@500&family=Julius+Sans+One&display=swap');
+*,
+::after,
+::before {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(https://wallpapercave.com/wp/wp10289960.jpg);
+    background-size: cover;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+}
+
+header {
+    height: 80px;   
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: black
+}
+
+#logo {
+    width: 150px;
+    height: auto;
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav {
+    width: 60%;
+}
+
+.lista-nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+li {
+    color: aliceblue;
+    font-size: 19px;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    cursor: pointer;
+    transition: .8s;
+}
+
+li:hover {
+    color: #d21617;
+}
+
+textarea {
+    font-family: 'Darker Grotesque', sans-serif;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+
+.form-box {
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff70;
+    border-radius: 8px;
+    width: 700px;
+}
+
+.form-box .title {
+    padding: 24px 32px;
+    font-size: 24px;
+    border-bottom: thin solid #ccc;
+}
+
+.form-box form {
+    display: flex;
+    align-items: start;
+    flex-wrap: wrap;
+    padding: 32px;
+}
+
+.form-box input,
+.form-box textarea {
+    width: calc(50% - 8px);
+    height: 48px;
+    border-radius: 8px;
+    border: thin solid #999;
+    padding-left: 16px;
+    margin-bottom: 16px;
+    font-size: 16px;
+}
+
+.form-box input:first-child {
+    margin-right: 16px;
+}
+
+.form-box input[name=subject] {
+    width: 100%;
+}
+
+.form-box textarea {
+    width: 100%;
+    height: 180px;
+    padding: 16px;
+}
+
+.form-box button {
+    display: block;
+    border: none;
+    outline: none;
+    width: 180px;
+    height: 48px;
+    border-radius: 8px;
+    background-color: #6915b8;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.form-box button:hover {
+    background-color: #4d0d88;
+}
+
+
+footer {
+    background-color: black;
+    color: aliceblue;
+    font-size: 19px;
+    font-family: Young, Serif;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+
+.footer-navigation {
+    display: none;
+}
+
+@media(max-width: 768px) {
+    nav {
+        display: none;
+    }
+
+    .footer-navigation {
+        display: flex;
+        justify-content: center;
+        margin: 20px 0 20px 0;
+    }
+
+    .footer-navigation:hover {
+        color: #d21617;
+    }
+}
+
